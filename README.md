@@ -21,7 +21,7 @@ HackTheBox: [f4T1H](https://app.hackthebox.com/profile/184235)<br>
 # Bilgi toplama
 <div align="center"><img src="img/varsayılan_sayfa.png"></div>
 
-Açıklamayı incelediğimizde bunun bir test domaini olduğunu söylemesi, ürün (production) ortamda olmaması dolayısıyla arama motoru crawlerlarının erişmemesi istenmiş olabileceğinden `/robots.txt` dosyasına bakabiliriz.
+Açıklamayı incelediğimizde bunun bir test domaini olduğunun söylemesi, ürünün (production) ortamda olmaması dolayısıyla arama motoru crawlerlarının erişmemesi istenmiş olabileceğinden dolayı `/robots.txt` dosyasına bakabiliriz.
 
 <div align="center"><img src="img/robots.png"></div>
 
