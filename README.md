@@ -138,20 +138,21 @@ Veritabanındaki şemaların, tabloların ve kolonların isimlerinin sorgusunu; 
 
 İhtiyacım olduğunda hızlıca veri tabanı oluşturmak ve kullandıldıktan sonra otomatik silinmesini sağlamak için yazdığım one-liner'ı da GitHub'da bulabilirsiniz.
 
+Vee, sonuç: SQLMAP'in SQLi olmadığını söylediği parametreden enjeksiyonu başarıyla gerçekleştirip flag'i elde ettim.
 https://github.com/f4T1H21/mysql-docker-oneliner
 
 <div align="center"><img src="img/final.png"></div>
 
 # Problem
-Flag veritabanının en saçma kolonlarından bir tanesinde olduğundan dolayı o kolona gelene kadar tabloların hepsinin isimlerini çıkarmam gerekti.
+Flag veritabanının en saçma kolonlarından bir tanesindeydi. Dolayı o kolona rastlayana kadar tabloların hepsinin isimlerini çıkarmam gerekti.
 
 Her ne kadar otomatik de olsa bir karakter dumplamak için ortalama 8.5 HTTP request'i gittiğinden dolayı ve ara sıra kontrol etmem gerektiğinden dolayı süreç uzayıp gitti.
 
 Hattâ bir ara bu durumdan sıkılıp yetkililere flag'in konumunu sordum. Veritabanındaki admin parolalarının yazılı olduğu kolondan 32 hanelik bir parolayı da (exploitation'da başarılı olduğumun referansı olması için) ekleyerek gönderdiğim mesaja daha detaylı bakmam gerektiği cevabını vererek konuyu kapattılar.
 
-Neyse, en sonunda AdminRegDate isminde adminlerin sisteme kayıt tarihlerinin içinde olduğu kolonda buldum.
+Neyse, en sonunda AdminRegDate isminde adminlerin sisteme kayıt tarihlerinin yazdığı kolonda buldum Flagi.
 
-Bulduğumda o zamana kadar çektiğim ettiğim veriler ise hayli fazlaydı.
+Bulduğumda o zamana kadar çektiğim ettiğim veriler ise bir ctf sorusu için gereksiz fazlaydı.
 
 <div align="center"><img src="img/db_dump.png"></div>
 
