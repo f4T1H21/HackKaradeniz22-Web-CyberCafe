@@ -4,7 +4,7 @@
 
 Selam, ben Şefik Efe. HackKaradeniz 2022 yarışmasındaki sorular arasından bir tek bu soru için writeup hazırlıyorum. Bunun sebeplerinden bir tanesi benim için ayrıcalıklı bir yere sahip olması.
 
-Mutluyum, çünkü hayatımda ilk defa SQLMAP'in SQLi olmadığını söylediği bir girdi noktasından enjeksiyona muvaffak oldum.
+Mutluyum, çünkü hayatımda ilk defa SQLMAP'in SQLi olmadığını söylediği bir girdi noktasından enjeksiyonu başardım.
 
 Gelelim genel değerlendirmeye, soru iki aşamadan oluşuyor İkinci aşaması kaliteli ve ileri seviye denebilecek nitelikte. Aynı zamanda yarışma esnasında bana en çok 'vakit kaybettiren' sorudur kendisi, ki bunun da sebebini en son anlayacaksınız.
 
@@ -72,12 +72,12 @@ Kullanıcıların listelendiği iki sayfayı şekildeki iki kırmızı ok ile g�
 
 <div align="center"><img src="img/user.png"></div>
 
-Mevzubahis sayfaları incelediğimizde iki tane acayip önemli şey görüyoruz.
+Söz konusu sayfaları incelediğimizde iki tane acayip önemli şey görüyoruz.
 
 1) Kullanıcıya ait ID
 2) Kullanıcı ismi
 
-Az sonra ehemmiyetini idrâk edeceğimiz bu iki mâlumâtı bir kenara not aldıktan sonra, arama sayfasını inceleyelim.
+Az sonra önemini anlayacağımız bu iki mâlumâtı bir kenara not aldıktan sonra, arama sayfasını inceleyelim.
 
 <div align="center"><img src="img/xss.png"></div>
 
