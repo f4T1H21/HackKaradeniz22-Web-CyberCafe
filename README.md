@@ -99,7 +99,7 @@ Bildiğimiz gibi SQLi'ların türleri vardır:
 - Zaman tabanlı &nbsp; (Blind)
 - Out Of Band &ensp;&ensp;&ensp;(Blind)
 
-Her çeşidi anlamanın değişik yolları var. Yarışma esnasında birkaç `'` denemesinden sonra UNION ve Error tabanlı enjeksiyonları eledim ve Boolean tabanlı enjeksiyon tespiti yapmaya koyuldum.
+Her çeşidi anlamanın değişik yolları var. Yarışma esnasında birkaç `'` denemesinden sonra UNION ve Hata tabanlı enjeksiyonları eledim ve Boolean tabanlı enjeksiyon tespiti yapmaya koyuldum.
 
 Şimdi sizi backend'te nasıl bir sorgunun çalıştığını ve bizden alınan girdinin sorgunun neresine konuşlandırıldığını tasavvur etmeye davet ediyorum.
 
