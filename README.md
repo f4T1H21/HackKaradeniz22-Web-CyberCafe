@@ -130,13 +130,13 @@ Script yazmadan önce giden HTTP requestlerinin detaylarını ve girdinin hangi 
 
 <div align="center"><img src="img/parametre.png"></div>
 
-Ardından scripti yazmaya başladım. Mantığı programlarken geçen senenin (2021) Aralık ayında PortSwigger'ın web güvenliği akademisini çözerken Boolean tabanlı Blind SQLi ların exploitation aşamasını otomatikleştirmek için yazdığım program, exploitation için yazdığım script üzerinde çalışırken işimi çok kolaylaştırdı.
+Ardından scripti yazmaya başladım. Mantığını programlarken geçen senenin (2021) Aralık ayında PortSwigger'ın web güvenliği akademisini çözerken Boolean tabanlı Blind SQLi'ların exploitation aşamasını otomatikleştirmek için yazdığım program, exploitation için yazdığım script üzerinde çalışırken işimi çok kolaylaştırdı.
 
 https://github.com/f4T1H21/Blind-SQL-Injection
 
 Veritabanındaki şemaların, tabloların ve kolonların isimlerinin sorgusunu; ve `SUBSTR`, `LIMIT`, `ASCII` gibi yardımcı metotları da karşı sistemde denemeden önce Docker üzerinde oluşturduğum ve kullandıktan sonra otomatik silinen yerel veritabanımda hızlıca denedim ve nihai sorguları yazdım.
 
-Hızlıca veri tabanı oluşturmak ve kullandıldıktan sonra otomatik silinmesini sağlamak için yazdığım one-liner'ı da GitHub'da bulabilirsiniz.
+İhtiyacım olduğunda hızlıca veri tabanı oluşturmak ve kullandıldıktan sonra otomatik silinmesini sağlamak için yazdığım one-liner'ı da GitHub'da bulabilirsiniz.
 
 https://github.com/f4T1H21/mysql-docker-oneliner
 
