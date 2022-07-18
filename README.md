@@ -27,7 +27,7 @@ Açıklamayı incelediğimizde bir test domaini ile karşı karşıya olduğumuz
 
 Scope'umuz belli oldu: `challenge105.hackkaradeniz.xyz/k1j2uzn2q00b`
 
-Her şeyden önve hızlı bir dizin taraması sonucunda `/k1j2uzn2q00b/includes` isimli bir dizin görüyoruz.
+Her şeyden önce hızlı bir dizin taraması sonucunda `/k1j2uzn2q00b/includes` isimli bir dizin görüyoruz.
 
 __Tüyo:__ `/includes` dizini içerisindeki varsa `php` dosyalarının isimleri bize backend'te neler döndüğüne dair fikir verebilir.
 
@@ -43,7 +43,7 @@ https://challenge105.hackkaradeniz.xyz/k1j2uzn2q00b/vendors (Status: 301)
 
 <div align="center"><img src="img/includes.png"></div>
 
-`dbconnection` ve `searchdb` anahtar kelimeleri bir SQL Injection sorusuyla karşı karsıya olduğumuzu söylüyor olabilir.
+`dbconnection` ve `searchdb` anahtar kelimeleri bir SQL Injection sorusuyla karşı karşıya olduğumuzu söylüyor olabilir.
 
 Dikkat ederseniz daha web sitesini adam akıllı incelemeden ne tür zaafiyetler arayacağımızı ve hangi payloadları kullanacağımızı tahmin edebiliyoruz.
 
@@ -55,7 +55,7 @@ Artık anasayfayı incelemenin vakti geldi.
 <div align="center"><img src="img/auth_bypass.png"></div>
 
 # Bilgi toplamaya devam
-Bu arada veritabanı türünü de payloadlarda yorum olarak işaretlemek maksadıyla kullandığımız `#` işaretinden yola çıkarak MySQL olarak saptadık.
+Bu arada veritabanı türünü de payloadlarda yorum olarak işaretlemek maksadıyla kullandığımız `#` işaretinden yola çıkarak, MySQL olarak saptadık.
 
 Bence burada üstünde durulabilecek noktalardan bir tanesi, sabit değişkeninin bypass payloadı girilen `password` parametresi olduğu, bağımsız değişkenlerinin `username` parametresine girilecek `admin' and 1=1#` ve `admin' and 1=0#` payloadları sonucunda sunucudan dönen cevabın da bağımlı değişkenler olduğu bir deney yapılmasıdır.
 
