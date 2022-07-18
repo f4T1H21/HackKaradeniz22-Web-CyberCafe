@@ -157,7 +157,7 @@ Bulduğumda o zamana kadar çektiğim ettiğim veriler ise hayli fazlaydı.
 
 ---
 
-Buraya kadar okuduysanız, teşekkür ediyorum. Yapıcı geri bildirimlere açığım. İyi çalışmalar, vesselam.
+Okuduğunuz için teşekkür ediyorum. Yapıcı geri bildirimlere açığım. İyi çalışmalar, vesselam.
 
 Twitter: [@f4T1H21](https://twitter.com/f4T1H21)<br>
 LinkedIn: [Şefik Efe](https://www.linkedin.com/in/şefik-efe)<br>
