@@ -1,6 +1,8 @@
 <div align=center><img src="img/açıklama.png"></div>
 
-Selam, ben Şefik Efe. HackKaradeniz 2022 içerisinden bir tek bu soru için writeup hazırlıyorum. Bunun sebeplerinden bir tanesi benim için ayrıcalıklı bir yere sahip olması.
+<br>
+
+Selam, ben Şefik Efe. HackKaradeniz 2022 yarışmasındaki sorular arasından bir tek bu soru için writeup hazırlıyorum. Bunun sebeplerinden bir tanesi benim için ayrıcalıklı bir yere sahip olması.
 
 Mutluyum, çünkü hayatımda ilk defa SQLMAP'in SQLi olmadığını söylediği bir girdi noktasından enjeksiyona muvaffak oldum.
 
@@ -8,7 +10,7 @@ Gelelim genel değerlendirmeye, soru iki aşamadan oluşuyor İkinci aşaması k
 
 Buradan CyberCafe yazarına selam gönderiyor, Flag'i daha adam akıllı bir yere koyamadınız mı diyerek kınıyor ama yine de böyle bir soruyu yazdığından dolayı teşekkür ediyorum.
 
-Ayrıca Yusuf Saraçlıoğlu arkadaşıma da kafamda başka bir soruya bakmak varken bana bu soruda hatırı sayılır miktarda foothold verdiğinden dolayı da teşekkür ediyorum.
+Ayrıca [Yusuf Saraçlıoğlu](https://github.com/the-src) arkadaşıma da kafamda başka bir soruya bakmak varken bana bu soruda hatırı sayılır miktarda foothold verdiğinden dolayı da teşekkür ediyorum.
 
 Twitter: [@f4T1H21](https://twitter.com/f4T1H21)<br>
 LinkedIn: [Şefik Efe](https://www.linkedin.com/in/şefik-efe)<br>
@@ -155,7 +157,7 @@ Bulduğumda o zamana kadar çektiğim ettiğim veriler ise hayli fazlaydı.
 
 ---
 
-Buraya kadar okuduysanız, teşekkür ediyorum. Değerli geri bildirimlere açığım. İyi çalışmalar, vesselam.
+Buraya kadar okuduysanız, teşekkür ediyorum. Yapıcı geri bildirimlere açığım. İyi çalışmalar, vesselam.
 
 Twitter: [@f4T1H21](https://twitter.com/f4T1H21)<br>
 LinkedIn: [Şefik Efe](https://www.linkedin.com/in/şefik-efe)<br>
