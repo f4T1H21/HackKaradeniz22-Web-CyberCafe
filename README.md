@@ -4,7 +4,7 @@
 
 Selam, ben Şefik Efe. HackKaradeniz 2022 yarışmasındaki sorular arasından bir tek bu soru için writeup hazırlıyorum. Bunun sebeplerinden bir tanesi benim için ayrıcalıklı bir yere sahip olması.
 
-Mutluyum, çünkü hayatımda ilk defa SQLMAP'in SQLi olmadığını söylediği bir girdi noktasından enjeksiyonu başardım.
+Mutluyum, çünkü hayatımda ilk defa SQLMAP'in SQLi olmadığını söylediği bir girdi noktasından enjeksiyona muvaffak oldum.
 
 Gelelim genel değerlendirmeye, soru iki aşamadan oluşuyor İkinci aşaması kaliteli ve ileri seviye denebilecek nitelikte. Aynı zamanda yarışma esnasında bana en çok 'vakit kaybettiren' sorudur kendisi, ki bunun da sebebini en son anlayacaksınız.
 
@@ -92,6 +92,8 @@ Test etmek için az önceki `Shanu Dev` isimli kullanıcıya ait `Entry ID` değ
 
 Şimdi geldik zurnanın zırt dediği yere, burada SQLi var mı yok mu nasıl anlayacağız.
 
+SQLMAP çalıştırdığımızda SQLi olmadığını söylemesine rağmen, ben devam edip manuel olarak da test etmek istedim.
+
 Bildiğimiz gibi SQLi'ların türleri vardır:
 - UNION tabanlı
 - Hata tabanlı
@@ -124,7 +126,7 @@ Dikkat edersek eğer, sorguda birden fazla yere bizden alınan girdi konuluyor. 
 Var yok oyunumun işe yaradığını gördüğümde heyecanlandım ve emin olabilmek için hemen BurpSuite'in Intruder aracını kullanarak veritabanındaki geçerli şemanın ilk tablosunun isminin ilk harfini dumpladım.
 
 # Exploitation
-Bu aşamada eğer izlemediyseniz [Mehmet İnce](xx) Hoca'nın Boolean Based SQLi ve exploitation yollarını anlattığı [videoyu](https://www.youtube.com/watch?v=WtHnT73NaaQ&t=4834s) izlemenizi tavsiye ederim.
+Bu aşamada eğer izlemediyseniz [Mehmet İnce](https://github.com/mdisec) Hoca'nın Boolean Based SQLi ve exploitation yollarını anlattığı [videoyu](https://www.youtube.com/watch?v=WtHnT73NaaQ&t=4834s) izlemenizi tavsiye ederim.
 
 Script yazmadan önce giden HTTP requestlerinin detaylarını ve girdinin hangi parametrede gittiğini saptadım.
 
@@ -144,7 +146,7 @@ https://github.com/f4T1H21/mysql-docker-oneliner
 <div align="center"><img src="img/final.png"></div>
 
 # Problem
-Flag veritabanının en saçma kolonlarından bir tanesindeydi. Dolayı o kolona rastlayana kadar tabloların hepsinin isimlerini çıkarmam gerekti.
+Flag veritabanının en saçma kolonlarından bir tanesindeydi. O kolona rastlayana kadar tabloların hepsinin isimlerini çıkarmam gerekti.
 
 Her ne kadar otomatik de olsa bir karakter dumplamak için ortalama 8.5 HTTP request'i gittiğinden dolayı ve ara sıra kontrol etmem gerektiğinden dolayı süreç uzayıp gitti.
 
