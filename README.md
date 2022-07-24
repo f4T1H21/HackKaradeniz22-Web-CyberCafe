@@ -154,7 +154,7 @@ Hattâ bir ara bu durumdan sıkılıp yetkililere flag'in konumunu sordum. Verit
 
 Neyse, en sonunda AdminRegDate isminde adminlerin sisteme kayıt tarihlerinin yazdığı kolonda buldum Flagi.
 
-Bulduğumda o zamana kadar çektiğim ettiğim veriler ise bir ctf sorusu için gereksiz fazlaydı.
+Bulduğumda o zamana kadar çektiğim veriler ise bir ctf sorusu için gereksiz fazlaydı.
 
 <div align="center"><img src="img/db_dump.png"></div>
 
