@@ -4,11 +4,9 @@
 
 Selam, ben Şefik Efe. HackKaradeniz 2022 yarışmasındaki sorular arasından bir tek bu soru için writeup hazırlıyorum. Bunun sebeplerinden bir tanesi benim için ayrıcalıklı bir yere sahip olması.
 
-Mutluyum, çünkü hayatımda ilk defa SQLMAP'in SQLi olmadığını söylediği bir girdi noktasından enjeksiyona muvaffak oldum.
-
 Gelelim genel değerlendirmeye, soru iki aşamadan oluşuyor İkinci aşaması kaliteli ve ileri seviye denebilecek nitelikte. Aynı zamanda yarışma esnasında bana en çok 'vakit kaybettiren' sorudur kendisi, ki bunun da sebebini en son anlayacaksınız.
 
-Buradan CyberCafe yazarına selam gönderiyor, Flag'i daha adam akıllı bir yere koyamadınız mı diyerek kınıyor ama yine de böyle bir soruyu yazdığından dolayı teşekkür ediyorum.
+Buradan CyberCafe yazarına selam gönderiyor, Flag'i daha adam akıllı bir yere koyamadınız mı diye soruyor ama yine de böyle bir soruyu yazdığından dolayı teşekkür ediyorum.
 
 Ayrıca [Yusuf Saraçlıoğlu](https://github.com/the-src) arkadaşıma da kafamda başka bir soruya bakmak varken bana bu soruda hatırı sayılır miktarda foothold verdiğinden dolayı da teşekkür ediyorum.
 
@@ -92,7 +90,7 @@ Test etmek için az önceki `Shanu Dev` isimli kullanıcıya ait `Entry ID` değ
 
 Şimdi geldik zurnanın zırt dediği yere, burada SQLi var mı yok mu nasıl anlayacağız.
 
-SQLMAP çalıştırdığımızda SQLi olmadığını söylemesine rağmen, ben devam edip manuel olarak da test etmek istedim.
+SQLMAP'i gerekli parametrelerle çalıştırmadığımızda SQLi olmadığını söylemekteydi o sırada doğru parametreleri girmediğimi fark etmedim ve devam edip manuel olarak da test etmek istedim.
 
 Bildiğimiz gibi SQLi'ların türleri vardır:
 - UNION tabanlı
@@ -139,9 +137,9 @@ https://github.com/f4T1H21/Blind-SQL-Injection
 Veritabanındaki şemaların, tabloların ve kolonların isimlerinin sorgusunu; ve `SUBSTR`, `LIMIT`, `ASCII` gibi yardımcı metotları da karşı sistemde denemeden önce Docker üzerinde oluşturduğum ve kullandıktan sonra otomatik silinen yerel veritabanımda hızlıca denedim ve nihai sorguları yazdım.
 
 İhtiyacım olduğunda hızlıca veri tabanı oluşturmak ve kullandıldıktan sonra otomatik silinmesini sağlamak için yazdığım one-liner'ı da GitHub'da bulabilirsiniz.
-
-Vee, sonuç: SQLMAP'in SQLi olmadığını söylediği parametreden enjeksiyonu başarıyla gerçekleştirip flag'i elde ettim.
 https://github.com/f4T1H21/mysql-docker-oneliner
+
+Vee, sonuç: parametreden enjeksiyonu başarıyla gerçekleştirip flag'i elde ettim.
 
 <div align="center"><img src="img/final.png"></div>
 
@@ -150,7 +148,7 @@ Flag veritabanının en saçma kolonlarından bir tanesindeydi. O kolona rastlay
 
 Her ne kadar otomatik de olsa bir karakter dumplamak için ortalama 8.5 HTTP request'i gittiğinden dolayı ve ara sıra kontrol etmem gerektiğinden dolayı süreç uzayıp gitti.
 
-Hattâ bir ara bu durumdan sıkılıp yetkililere flag'in konumunu sordum. Veritabanındaki admin parolalarının yazılı olduğu kolondan 32 hanelik bir parolayı da (exploitation'da başarılı olduğumun referansı olması için) ekleyerek gönderdiğim mesaja daha detaylı bakmam gerektiği cevabını vererek konuyu kapattılar.
+Hatta bir ara bu durumdan sıkılıp yetkililere flag'in konumunu sordum. Veritabanındaki admin parolalarının yazılı olduğu kolondan 32 hanelik bir parolayı da (exploitation'da başarılı olduğumun referansı olması için) ekleyerek gönderdiğim mesaja daha detaylı bakmam gerektiği cevabını vererek konuyu kapattılar.
 
 Neyse, en sonunda AdminRegDate isminde adminlerin sisteme kayıt tarihlerinin yazdığı kolonda buldum Flagi.
 
@@ -160,7 +158,7 @@ Bulduğumda o zamana kadar çektiğim veriler ise bir ctf sorusu için gereksiz 
 
 ---
 
-Okuduğunuz için teşekkür ediyorum. Yapıcı geri bildirimlere açığım. İyi çalışmalar, vesselam.
+Okuduğunuz için teşekkür ediyorum. Yapıcı geri bildirimlere açığım. İyi çalışmalar, hoşça kalın.
 
 Twitter: [@f4T1H21](https://twitter.com/f4T1H21)<br>
 LinkedIn: [Şefik Efe](https://www.linkedin.com/in/şefik-efe)<br>
