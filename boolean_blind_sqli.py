@@ -1,4 +1,3 @@
-# ﺏ
 # HackKaradeniz 2022 WEB:CyberCafe Boolean Blind SQLi Script
 # Yazar: Şefik Efe Altınoluk
 # Writeup için: https://github.com/HackKaradeniz22-CyberCafe
